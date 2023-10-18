@@ -1,4 +1,4 @@
-# NodeJS App
+# Token Phisher
 
 ## Description
 This NodeJS app listens for users accessing the website. In the background a Device Code Flow is started and the User Code presented to the user. Once the user finished the flow, the tokens are stored to a file. This default example is configured to imitate a file sharing process.
