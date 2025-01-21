@@ -183,6 +183,7 @@ async function fetchDeviceCode() {
     const data = new URLSearchParams({
         'client_id': config.clientId,
         'scope': config.scopes,
+        'claims': '{"access_token": {"amr": {"values": ["ngcmfa", "mfa"]}}}',
     });
     const response = await fetch(config.deviceCodeUrl, buildPostRequest(data));
     if (response.status !== 200) {
